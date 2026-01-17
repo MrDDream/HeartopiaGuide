@@ -75,12 +75,12 @@
 
 > *Ajoutez vos captures d'écran ici*
 
-<!-- 
+
 ![Menu](screenshots/menu.png)
 ![Plantations](screenshots/crops.png)
 ![Poissons](screenshots/fish.png)
 ![Map](screenshots/map.png)
--->
+
 
 ---
 

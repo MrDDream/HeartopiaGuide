@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SmallBottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconSize">20dp</item>
+        <item name="itemTextAppearanceActive">@style/SmallBottomNavigationText</item>
+        <item name="itemTextAppearanceInactive">@style/SmallBottomNavigationText</item>
+    </style>
+    
+    <style name="SmallBottomNavigationText" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

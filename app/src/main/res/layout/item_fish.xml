@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/fishIconCardView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/fishIconImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/fish"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                tools:src="@drawable/fish_ablette" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/fishLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lv. 1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/level_badge_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Lv. 1" />
+
+        <TextView
+            android:id="@+id/fishNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ablette"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="@id/fishIconCardView"
+            app:layout_constraintStart_toEndOf="@id/fishIconCardView"
+            app:layout_constraintEnd_toStartOf="@id/fishLevelTextView"
+            app:layout_constraintBottom_toTopOf="@id/fishHabitatTextView"
+            tools:text="Ablette" />
+
+        <TextView
+            android:id="@+id/fishHabitatTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lac"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/fishNameTextView"
+            app:layout_constraintStart_toStartOf="@id/fishNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/fishActivityTimeTextView"
+            tools:text="Lac" />
+
+        <TextView
+            android:id="@+id/fishActivityTimeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Toute la journée"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/fishHabitatTextView"
+            app:layout_constraintStart_toStartOf="@id/fishNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/fishWeatherTextView"
+            tools:text="Toute la journée" />
+
+        <TextView
+            android:id="@+id/fishWeatherTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="☀️ 🌧️ 🌬️ 🌙"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintTop_toBottomOf="@id/fishActivityTimeTextView"
+            app:layout_constraintStart_toStartOf="@id/fishNameTextView"
+            app:layout_constraintEnd_toStartOf="@id/fishPriceLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="☀️ 🌧️ 🌬️ 🌙" />
+
+        <LinearLayout
+            android:id="@+id/fishPriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/fishActivityTimeTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/fishPriceNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="50" />
+
+            <ImageView
+                android:id="@+id/fishGoldIconImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_gold"
+                android:contentDescription="@string/fish"
+                android:layout_marginStart="2dp"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

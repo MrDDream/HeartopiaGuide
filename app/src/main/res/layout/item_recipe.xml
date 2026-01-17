@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/recipeIconCardView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/recipeIconImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/recipes"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                tools:src="@drawable/recipe_salade_de_campagne" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_heart"
+            android:contentDescription="@string/favorite"
+            android:padding="6dp"
+            app:tint="?attr/colorOnSurfaceVariant"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:tint="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/recipeNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Salade de campagne"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="@id/recipeIconCardView"
+            app:layout_constraintStart_toEndOf="@id/recipeIconCardView"
+            app:layout_constraintEnd_toStartOf="@id/favoriteButton"
+            app:layout_constraintBottom_toTopOf="@id/recipeIngredientsLayout"
+            tools:text="Salade de campagne" />
+
+        <LinearLayout
+            android:id="@+id/recipeIngredientsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/recipeNameTextView"
+            app:layout_constraintStart_toStartOf="@id/recipeNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/recipeEnergyLayout"
+            tools:text="Tout type de légume" />
+
+        <LinearLayout
+            android:id="@+id/recipeEnergyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/recipeIngredientsLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/recipePriceLayout">
+
+            <ImageView
+                android:id="@+id/recipeEnergyIconImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_energy"
+                android:contentDescription="@string/recipes"
+                android:layout_marginEnd="2dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/recipeEnergyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recipePriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/recipeEnergyLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/recipePriceNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="90" />
+
+            <ImageView
+                android:id="@+id/recipeGoldIconImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_gold"
+                android:contentDescription="@string/recipes"
+                android:layout_marginStart="2dp"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

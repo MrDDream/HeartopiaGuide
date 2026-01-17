@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map" />
+    <item
+        android:id="@+id/timerFragment"
+        android:icon="@drawable/ic_plant"
+        android:title="@string/nav_timer" />
+    <item
+        android:id="@+id/recipesFragment"
+        android:icon="@drawable/ic_recipes"
+        android:title="@string/recipes" />
+    <item
+        android:id="@+id/fishFragment"
+        android:icon="@drawable/ic_fishs"
+        android:title="@string/fish" />
+    <item
+        android:id="@+id/birdsFragment"
+        android:icon="@drawable/ic_birds"
+        android:title="@string/birds" />
+    <item
+        android:id="@+id/bugsFragment"
+        android:icon="@drawable/ic_insects"
+        android:title="@string/bugs" />
+    <item
+        android:id="@+id/codesFragment"
+        android:icon="@drawable/ic_gifts"
+        android:title="@string/codes" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+</menu>

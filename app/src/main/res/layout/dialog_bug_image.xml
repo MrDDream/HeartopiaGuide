@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/enlargedBugImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/bugs"
+        android:padding="32dp"
+        android:visibility="gone"
+        tools:src="@drawable/bug_abeille_a_queue_blanche"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/enlargedBugEmojiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="200sp"
+        android:text="🪲"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</FrameLayout>

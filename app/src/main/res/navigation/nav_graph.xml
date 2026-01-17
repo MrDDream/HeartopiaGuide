@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.heartopia.timer.ui.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.heartopia.timer.ui.MapFragment"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_mapFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.heartopia.timer.ui.TimerFragment"
+        android:label="@string/nav_timer"
+        tools:layout="@layout/fragment_timer">
+        <action
+            android:id="@+id/action_timerFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_timerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="com.heartopia.timer.ui.RecipesFragment"
+        android:label="@string/recipes"
+        tools:layout="@layout/fragment_recipes">
+        <action
+            android:id="@+id/action_recipesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/codesFragment"
+        android:name="com.heartopia.timer.ui.CodesFragment"
+        android:label="@string/codes"
+        tools:layout="@layout/fragment_codes">
+        <action
+            android:id="@+id/action_codesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bugsFragment"
+        android:name="com.heartopia.timer.ui.BugsFragment"
+        android:label="@string/bugs"
+        tools:layout="@layout/fragment_bugs">
+        <action
+            android:id="@+id/action_bugsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fishFragment"
+        android:name="com.heartopia.timer.ui.FishFragment"
+        android:label="@string/fish"
+        tools:layout="@layout/fragment_fish">
+        <action
+            android:id="@+id/action_fishFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/birdsFragment"
+        android:name="com.heartopia.timer.ui.BirdsFragment"
+        android:label="@string/birds"
+        tools:layout="@layout/fragment_birds">
+        <action
+            android:id="@+id/action_birdsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.heartopia.timer.ui.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

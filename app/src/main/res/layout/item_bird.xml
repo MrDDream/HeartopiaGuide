@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/birdIconCardView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/birdIconImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/birds"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                tools:src="@drawable/bird_paon_bleu" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/birdLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lv. 5"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/level_badge_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Lv. 5" />
+
+        <TextView
+            android:id="@+id/birdNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pigeon olive africain"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toTopOf="@id/birdIconCardView"
+            app:layout_constraintStart_toEndOf="@id/birdIconCardView"
+            app:layout_constraintEnd_toStartOf="@id/birdLevelTextView"
+            app:layout_constraintBottom_toTopOf="@id/birdLocationTextView"
+            tools:text="Pigeon olive africain" />
+
+        <TextView
+            android:id="@+id/birdLocationTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Montagne Onsen (Onsen)"
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/birdNameTextView"
+            app:layout_constraintStart_toStartOf="@id/birdNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/birdWeatherTextView"
+            tools:text="Montagne Onsen (Onsen)" />
+
+        <TextView
+            android:id="@+id/birdWeatherTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="☀️ 🌧️ 🌬️ 🌙"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintTop_toBottomOf="@id/birdLocationTextView"
+            app:layout_constraintStart_toStartOf="@id/birdNameTextView"
+            app:layout_constraintEnd_toStartOf="@id/birdPriceLayout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="☀️ 🌧️ 🌬️ 🌙" />
+
+        <LinearLayout
+            android:id="@+id/birdPriceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/birdLocationTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/birdPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="27" />
+
+            <ImageView
+                android:id="@+id/birdGoldIconImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_gold"
+                android:contentDescription="@string/birds"
+                android:layout_marginStart="2dp"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

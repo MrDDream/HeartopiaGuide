@@ -1,4 +1,6 @@
+<div align="center">
 # 🎮 Heartopia Guide
+</div>
 
 <div align="center">
 

@@ -76,9 +76,10 @@
 > *Ajoutez vos captures d'écran ici*
 
 <!-- 
-![Tâches Quotidiennes](screenshots/tasks.png)
+![Menu](screenshots/menu.png)
 ![Plantations](screenshots/crops.png)
 ![Recettes](screenshots/recipes.png)
+![Map](screenshots/map.png)
 -->
 
 ---

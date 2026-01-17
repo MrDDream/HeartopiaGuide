@@ -78,7 +78,7 @@
 <!-- 
 ![Menu](screenshots/menu.png)
 ![Plantations](screenshots/crops.png)
-![Recettes](screenshots/recipes.png)
+![Poissons](screenshots/fish.png)
 ![Map](screenshots/map.png)
 -->
 

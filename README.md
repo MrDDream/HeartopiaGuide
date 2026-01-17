@@ -9,8 +9,6 @@
 
 **Application compagnon Android complète pour le jeu Heartopia**
 
-[Fonctionnalités](#-fonctionnalités) • [Installation](#-installation) • [Technologies](#-technologies-utilisées) • [Architecture](#-architecture) • [Contribution](#-contribution)
-
 </div>
 
 ---
@@ -78,55 +76,13 @@
 > *Ajoutez vos captures d'écran ici*
 
 <!-- 
-![Tâches Quotidiennes](screenshots/tasks.png)
+![Menu](screenshots/menu.png)
 ![Plantations](screenshots/crops.png)
-![Recettes](screenshots/recipes.png)
+![Poissons](screenshots/fish.png)
+![Map](screenshots/map.png)
 -->
 
 ---
-
-## 🚀 Installation
-
-### Prérequis
-
-- **Android Studio** Hedgehog ou plus récent
-- **Android SDK** 24 (Android 7.0) minimum
-- **Android SDK** 36 (Android 15) cible
-- **Gradle** 8.1+
-- **JDK** 17
-
-### Étapes d'installation
-
-1. **Cloner le repository**
-   ```bash
-   git clone https://github.com/votre-username/heartopia-guide.git
-   cd heartopia-guide
-   ```
-
-2. **Ouvrir dans Android Studio**
-   - Ouvrir Android Studio
-   - Sélectionner "Open an Existing Project"
-   - Choisir le dossier du projet
-
-3. **Synchroniser Gradle**
-   - Android Studio synchronisera automatiquement les dépendances
-   - Ou manuellement : `File > Sync Project with Gradle Files`
-
-4. **Exécuter l'application**
-   - Connecter un appareil Android ou lancer un émulateur
-   - Cliquer sur `Run` (▶️) ou `Shift + F10`
-
-### Build depuis la ligne de commande
-
-```bash
-./gradlew assembleDebug
-```
-
-L'APK sera généré dans : `app/build/outputs/apk/debug/app-debug.apk`
-
----
-
-## 🛠️ Technologies utilisées
 
 ### Langages & Frameworks
 - **Kotlin** 2.3.0 - Langage de programmation principal
@@ -231,18 +187,6 @@ L'application demande les permissions suivantes :
 
 ---
 
-## 🧪 Tests
-
-```bash
-# Exécuter tous les tests
-./gradlew test
-
-# Exécuter les tests instrumentés
-./gradlew connectedAndroidTest
-```
-
----
-
 ## 📝 Structure des données
 
 ### Cultures disponibles
@@ -259,25 +203,6 @@ L'application demande les permissions suivantes :
 
 ---
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Voici comment contribuer :
-
-1. **Fork** le projet
-2. **Créer** une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. **Commit** vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** vers la branche (`git push origin feature/AmazingFeature`)
-5. **Ouvrir** une Pull Request
-
-### Guidelines
-
-- Suivez le style de code Kotlin existant
-- Ajoutez des commentaires pour le code complexe
-- Testez vos modifications
-- Mettez à jour la documentation si nécessaire
-
----
-
 ## 📄 Licence
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
@@ -289,14 +214,6 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 - **Heartopia** - Pour le jeu original
 - **Maptopia** - Pour la carte interactive intégrée
 - **heartopia.gg** - Pour les codes promo
-
----
-
-## 📞 Support
-
-- 📧 **Email** : [votre-email@example.com]
-- 🐛 **Issues** : [GitHub Issues](https://github.com/votre-username/heartopia-guide/issues)
-- 💬 **Discussions** : [GitHub Discussions](https://github.com/votre-username/heartopia-guide/discussions)
 
 ---
 

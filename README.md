@@ -73,13 +73,10 @@
 
 ## 📸 Captures d'écran
 
-> *Ajoutez vos captures d'écran ici*
-
-
-![Menu](screenshots/menu.png)
-![Plantations](screenshots/crops.png)
-![Poissons](screenshots/fish.png)
-![Map](screenshots/map.png)
+<img src="screenshots/menu.png" alt="Menu" width="300"/>
+<img src="screenshots/crops.png" alt="Plantations" width="300"/>
+<img src="screenshots/fish.png" alt="Poissons" width="300"/>
+<img src="screenshots/map.png" alt="Map" width="300"/>
 
 
 ---

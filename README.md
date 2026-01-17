@@ -73,10 +73,20 @@
 
 ## 📸 Captures d'écran
 
-<img src="screenshots/menu.png" alt="Menu" width="300"/>
-<img src="screenshots/crops.png" alt="Plantations" width="300"/>
-<img src="screenshots/fish.png" alt="Poissons" width="300"/>
-<img src="screenshots/map.png" alt="Map" width="300"/>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div>
+        <img src="screenshots/menu.png" alt="Menu" width="300"/>
+    </div>
+    <div>
+        <img src="screenshots/crops.png" alt="Plantations" width="300"/>
+    </div>
+    <div>
+        <img src="screenshots/fish.png" alt="Poissons" width="300"/>
+    </div>
+    <div>
+        <img src="screenshots/map.png" alt="Map" width="300"/>
+    </div>
+</div>
 
 
 ---

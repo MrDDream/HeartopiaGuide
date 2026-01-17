@@ -9,8 +9,6 @@
 
 **Application compagnon Android complète pour le jeu Heartopia**
 
-[Fonctionnalités](#-fonctionnalités) • [Installation](#-installation) • [Contribution](#-contribution)
-
 </div>
 
 ---
